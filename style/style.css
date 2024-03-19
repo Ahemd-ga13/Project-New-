@@ -1,0 +1,311 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+}
+.section {
+  margin-top: 20px; /* قد تحتاج لتعديل هذا الرقم حسب احتياجاتك */
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  /* background-attachment: fixed; */
+  color: white;
+  padding-top: 100px; /* تحديد المسافة بين الـ nav والمحتوى */
+}
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  position: fixed; /* جعل الـ nav ثابتًا */
+  top: 0; /* وضعه في أعلى الصفحة */
+  width: 100%; /* جعل الـ nav يمتد لتغطية العرض بالكامل */
+  background-color: rgba(0, 0, 0, 0.7); /* جعل الخلفية شفافة */
+  padding: 10px 0; /* إضافة بعض التباعد للأعلى والأسفل */
+  z-index: 1000; /* تحديد ترتيب العناصر لضمان ظهور الـ nav فوق العناصر الأخرى */
+  transition: background-color 0.5s; /* تأثير تدريجي لتغيير لون الخلفية */
+}
+nav ul li {
+  list-style: none;
+  width: 16%;
+  display: inline-block;
+  margin-left: 15px;
+  text-align: center;
+  /* jnkjankscac */
+}
+nav a {
+  text-decoration: none;
+  font-size: 26px;
+  color: white;
+  margin-left: 20px;
+}
+nav a:hover {
+  color: #ffc800;
+}
+.navLogo {
+  display: inline-block;
+  width: 30%;
+  color: #ffc800;
+  font-size: 25px;
+  font-style: italic;
+  right: -15px;
+  position: relative;
+}
+.nav-items {
+  display: inline-block;
+  width: 50%;
+  margin-left: 200px;
+  font-size: 20px;
+}
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); /* يمكنك تعديل شفافية اللون هنا */
+}
+.home-content {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 150px;
+}
+.home-content p {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.home-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.home-content button {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffc800;
+  color: white;
+  font-size: 26px;
+  border: 1px solid #ffc800;
+}
+.home-content button:hover {
+  background-color: #f7a5009e;
+}
+.services {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 300px;
+  margin-top: 50px;
+}
+.services h2 {
+  font-size: 60px;
+}
+.services p {
+  font-style: italic;
+}
+.card img {
+  width: 150px;
+}
+.services-content {
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.services-content .card {
+  border: 1px solid white;
+  width: 30%;
+  display: inline-block;
+  padding: 10px;
+}
+.portfolio-content h2 {
+  text-align: center;
+  font-size: 60px;
+}
+.portfolio-content p {
+  text-align: center;
+  font-style: italic;
+}
+.portfolio-content h3 {
+  text-align: center;
+}
+
+.portfolio-content img {
+  width: 400px;
+  margin: 23px;
+  margin-left: 60px;
+}
+.images {
+  display: inline-block;
+  background-color: white;
+}
+.about-content {
+  margin-top: 100px;
+}
+.about-content h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.about-content p {
+  text-align: center;
+  font-style: italic;
+}
+.img-about {
+  margin-left: 45%;
+  border-radius: 50%;
+  border: 10px solid rgb(208, 208, 208);
+  width: 12%;
+  margin-top: 50px;
+}
+.text-about {
+  /* width: 35%; */
+  margin-left: 100px;
+  text-align: end;
+  /* padding-top: 50px; */
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: -130px;
+  left: 150px;
+  width: 27%;
+}
+.img-march {
+  margin-left: 45%;
+  border-radius: 50%;
+  border: 10px solid rgb(208, 208, 208);
+  width: 12%;
+  margin-top: 100px;
+}
+.text-march {
+  position: absolute;
+  bottom: -250px;
+  right: 150px;
+  width: 27%;
+}
+.text-mar {
+  margin-left: 100px;
+  text-align: start;
+  /* padding-top: 50px; */
+  position: relative;
+}
+.center {
+  width: 200px;
+  height: 200px;
+  background-color: #ffc800;
+  border-radius: 50%;
+  border: 10px solid rgb(208, 208, 208);
+  margin-top: 140px;
+  margin-left: 45%;
+}
+.text-center {
+  text-align: center;
+  margin-top: 30%;
+  font-size: 25px;
+}
+.team {
+  margin-top: 150px;
+}
+.team-text {
+  text-align: center;
+}
+.team-text h2 {
+  font-size: 50px;
+}
+.team-text p {
+  font-style: italic;
+}
+.img-team img {
+  width: 250px;
+  border: 10px solid aliceblue;
+  border-radius: 50%;
+  margin: 25px;
+}
+.img-team {
+  margin-left: 150px;
+  margin-top: 70px;
+  display: inline-block;
+}
+.img-team h3 {
+  text-align: center;
+}
+.img-team p {
+  text-align: center;
+}
+.icon i {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+  margin-left: 35px;
+}
+.img-company {
+  width: 11%;
+  display: inline-block;
+  margin: 50px;
+  margin-top: 150px;
+  margin-left: 120px;
+}
+
+.text-contact h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+.text-contact p {
+  text-align: center;
+  font-style: italic;
+  margin-top: 30px;
+}
+.contact {
+  background-image: url("../images/map-image.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin-top: 50px;
+}
+.input-row {
+  margin: 100px;
+}
+
+input {
+  width: 50%;
+
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+  margin: 25px;
+  font-size: 25px;
+}
+::placeholder {
+  font-size: 25px;
+  text-align: start;
+}
+.text-area {
+  margin-left: 53%;
+  margin-top: -29%;
+}
+.text-area textarea {
+  border-radius: 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+}
+.button-massage {
+  margin-top: 100px;
+  margin-left: 45%;
+}
+
+.button-massage .button-mass {
+  height: 70px;
+  border-radius: 5px;
+  background-color: #ffc800;
+  color: white;
+  font-size: 26px;
+  border: 1px solid #ffc800;
+}
+.button-massage .button-mass :hover {
+  background-color: #f7a5009e;
+}
